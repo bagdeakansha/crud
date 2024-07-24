@@ -1,20 +1,15 @@
-import Bhopal from "./Bhopal";
-import { useState } from "react";
-import { createContext } from "react";
+import AuthUser from "./AuthUser";
+import UnauthUser from "./UnauthUser";
 
-const courseContext=createContext();
+import { useContext } from "react";
+import { myloginContext } from "./LoginContext";
 const App=()=>{
-    const[course,setCourse]=useState('Java');
+    const {user}=useContext(myloginContext);
     return(
         <>
-        <button onClick={()=>{setCourse("Python")}}>Click here</button>
-        <h1>Welcome {course}</h1>
-        <courseContext.Provider value={{course,setCourse}}>
-            <Bhopal/>
-        </courseContext.Provider>
+        <h1>My login Page--</h1>
+        {user.auth ? <AuthUser/> : <UnauthUser/>}
         </>
     )
 }
 export default App;
-
-export {courseContext};

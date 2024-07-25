@@ -1,15 +1,35 @@
-import AuthUser from "./AuthUser";
-import UnauthUser from "./UnauthUser";
+import { BrowserRouter,Routes,Route } from "react-router-dom";
+import Layout from "./Layout";
+import Home from "./Home";
+import About from "./About";
+import Contact from "./Contact";
+import Placement from "./Placement";
+import Services from "./Services";
+import Gallery from "./Gallery";
 
-import { useContext } from "react";
-import { myloginContext } from "./LoginContext";
 const App=()=>{
-    const {user}=useContext(myloginContext);
-    return(
-        <>
-        <h1>My login Page--</h1>
-        {user.auth ? <AuthUser/> : <UnauthUser/>}
-        </>
-    )
+  return(
+    <>
+    
+
+    <BrowserRouter>
+     <Routes>
+        <Route path="/" element={<Layout/>}>
+
+        <Route index element={<Home/>}/>
+        <Route path="home" element={<Home/>}/>
+
+        <Route path="about" element={<About/>}/>
+        <Route path="services" element={<Services/>}/>
+        <Route path="placement" element={<Placement/>}/>
+        {/* <Route path="gallery" element={<Gallery/>}/> */}
+        <Route path="gallery" element={<Gallery/>}/>
+        <Route path="contactus" element={<Contact/>}/>
+
+        </Route>
+      </Routes>     
+    </BrowserRouter>
+    </>
+  )
 }
 export default App;

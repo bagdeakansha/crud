@@ -1,16 +1,17 @@
+
 import { BrowserRouter,Routes,Route } from "react-router-dom";
 import Layout from "./Layout";
 import Home from "./Home";
-import About from "./About";
+import Insert from "./Insert";
+import Display from "./Display";
+import Update from "./Update";
 import Contact from "./Contact";
-import Placement from "./Placement";
-import Services from "./Services";
-import Gallery from "./Gallery";
+import Search from "./Search";
+
 
 const App=()=>{
   return(
     <>
-    
 
     <BrowserRouter>
      <Routes>
@@ -18,14 +19,17 @@ const App=()=>{
 
         <Route index element={<Home/>}/>
         <Route path="home" element={<Home/>}/>
+        <Route path="insert" element={<Insert/>}/>
+        <Route path="display" element={<Display/>}/>
+        <Route path="search" element={<Search/>}/>
+        <Route path="update" element={<Update/>}/>
+        {/* <Route path="total" element={<Total QTY/>}/> */}
+        {/* <Route path="contactus" element={<Contact/>}/> */}
 
-        <Route path="about" element={<About/>}/>
-        <Route path="services" element={<Services/>}/>
-        <Route path="placement" element={<Placement/>}/>
-        {/* <Route path="gallery" element={<Gallery/>}/> */}
-        <Route path="gallery" element={<Gallery/>}/>
-        <Route path="contactus" element={<Contact/>}/>
 
+        
+
+        
         </Route>
       </Routes>     
     </BrowserRouter>

@@ -1,51 +1,12 @@
 {
   "employee": [
     {
-      "emp_id": "1",
-      "name": "sid",
-      "designation": "manager",
-      "department": "IT",
-      "basic_salary": 20000,
-      "id": "c453"
-    },
-    {
-      "id": "5e2d",
-      "emp_id": "2",
-      "name": "Ravikesh",
-      "designation": "CEO",
-      "department": "IT",
-      "basic_salary": "200000"
-    },
-    {
-      "id": "00b0",
-      "emp_id": "3",
-      "name": "Rohan",
-      "designation": "Manager",
-      "department": "IT",
-      "basic_salary": "40000"
-    },
-    {
-      "id": "49f2",
-      "emp_id": "4",
-      "name": "Akansha",
-      "designation": "Designer",
-      "basic_salary": "30000"
-    },
-    {
-      "id": "89c2",
-      "emp_id": "5",
-      "name": "Priyansh",
-      "designation": "Manager",
-      "department": "IT",
-      "basic_salary": "60000"
-    },
-    {
-      "id": "5a3d",
-      "emp_id": "6",
-      "name": "Shristy",
-      "designation": "Technical manager",
-      "department": "CS",
-      "basic_salary": "25000"
+      "id": "7cc0",
+      "Product_name": "watch",
+      "Product_city": "indore",
+      "Net_price": "450",
+      "Customer_name": "piyush",
+      "Product_no": "13"
     }
   ]
 }

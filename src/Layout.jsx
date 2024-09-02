@@ -9,14 +9,18 @@ const Layout=()=>{
         <>
         <Navbar bg="dark" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand href="#home">Cybrom</Navbar.Brand>
+          {/* <Navbar.Brand href="#home">Cybrom</Navbar.Brand> */}
           <Nav className="me-auto">
             <Nav.Link as={Link} to="home">Home</Nav.Link>
-            <Nav.Link as={Link} to="about">About</Nav.Link>
-            <Nav.Link as={Link} to="services">Services</Nav.Link>
-            <Nav.Link as={Link} to="placement">Placement</Nav.Link>
-            <Nav.Link as={Link} to="gallery">Gallery</Nav.Link>
-            <Nav.Link as={Link} to="contactus">Contact Us</Nav.Link>
+            <Nav.Link as={Link} to="insert">Insert</Nav.Link>
+            <Nav.Link as={Link} to="display">Display</Nav.Link>
+            <Nav.Link as={Link} to="search">Search</Nav.Link>
+            <Nav.Link as={Link} to="update">Update</Nav.Link>
+            {/* <Nav.Link as={Link} to="total">Total QTY</Nav.Link> */}
+            {/* <Nav.Link as={Link} to="contactus">Contact Us</Nav.Link> */}
+            
+            
+            
            
           </Nav>
         </Container>

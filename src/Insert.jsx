@@ -1,12 +1,10 @@
 
-
-
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { useState } from 'react';
 import axios from 'axios';
 
-const About=()=>{
+const Insert=()=>{
 
 const [input,setinput]=useState({})
 
@@ -31,37 +29,41 @@ const handleclick=()=>{
 
     return(
         <>
-        <h1>Insert</h1>
+        <div id="form">
+
+        
+        <h1>DETAILS...</h1>
        
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>emp_id</Form.Label>
-        <Form.Control type="text" name='emp_id' value={input.emp_id} placeholder="emp_id" onChange={handlechange} />      
+        <Form.Label>Product Name</Form.Label>
+        <Form.Control type="text" name='Product_name' value={input.Product_name} placeholder="enter prodduct name" onChange={handlechange} />      
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label>Name</Form.Label>
-        <Form.Control type="text" name='name' value={input.name} placeholder="Name" onChange={handlechange} />
+        <Form.Label>Product City</Form.Label>
+        <Form.Control type="text" name='Product_city' value={input.Product_city} placeholder="enter city" onChange={handlechange} />
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label>designation</Form.Label>
-        <Form.Control type="text" placeholder="designation" name='designation' value={input.designation} onChange={handlechange} />
+        <Form.Label>Net Price</Form.Label>
+        <Form.Control type="text" placeholder="enter price" name='Net_price' value={input.Net_price} onChange={handlechange} />
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label>department</Form.Label>
-        <Form.Control type="text" placeholder="department" name='department' value={input.department} onChange={handlechange} />
+        <Form.Label>Customer Name</Form.Label>
+        <Form.Control type="text" placeholder="enter name" name='Customer_name' value={input.Customer_name} onChange={handlechange} />
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label>basic_salary</Form.Label>
-        <Form.Control type="text" placeholder="basic_salary" name='basic_salary' value={input.basic_salary} onChange={handlechange} />
+        <Form.Label>Product No</Form.Label>
+        <Form.Control type="text" placeholder="enter product no" name='Product_no' value={input.Product_no} onChange={handlechange} />
       </Form.Group>
      
       <Button variant="primary" type="submit" onClick={handleclick} >
         Submit
       </Button>
+      </div>
         </>
     )
 }
-export default About;
+export default Insert;

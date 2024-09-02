@@ -1,0 +1,14 @@
+body{
+    background-color: grey;
+}
+#form{
+    height: 75vh;
+    width: 500px;
+    /* background-color: aqua; */
+    margin:auto;
+    
+}
+#form h1{
+    padding: 20px;
+    text-decoration: underline;
+}
